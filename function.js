@@ -55,6 +55,19 @@ function codifyText(){
 	
 	var text = $('#enteredText').val();
 	 $('#enteredText').val('');
+	//$('#answerRow')	
+	
+	$('#answer #codeRow td').each(function(){
+		$('#' + this.id).remove();
+	});
+	
+	$('#answer #answerRow td').each(function(){
+		$('#' + this.id).remove();
+	});
+	
+	$('#answer #responseRow td').each(function(){
+		$('#' + this.id).remove();
+	});
 	
 	for (var i=0; i< text.length; i++){
 		
